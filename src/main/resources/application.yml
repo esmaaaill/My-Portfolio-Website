@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: portfolio-api
+server:
+  port: 8080
+logging:
+  level:
+    root: INFO
+    com.portfolio.api: DEBUG
