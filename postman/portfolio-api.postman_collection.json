@@ -1,0 +1,58 @@
+{
+  "info": {
+    "_postman_id": "c541c69a-cf9f-46ef-b83d-6a16edc05977",
+    "name": "Portfolio API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Projects",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/projects",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "projects"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Project",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"My Portfolio API\",\n  \"description\": \"Spring Boot backend\",\n  \"repositoryUrl\": \"https://github.com/example/repo\",\n  \"skills\": [\"Java\", \"Spring Boot\"]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/projects",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "projects"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ]
+}
